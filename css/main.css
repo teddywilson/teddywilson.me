@@ -1,5 +1,5 @@
 body {
-    font-family: header;
+    font-family: KaushanScript;
     color: black;
     height: 100%;
     width: 100%;
@@ -13,7 +13,22 @@ a {
   text-decoration: none;
  }
 
+.header{
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right:0;
+  float: right;
+  z-index: 2;
+  margin-top: 30px;
+  font-size: 50px;
+  color: rgba(254, 249, 249, 0.7);
+}
 
+.header .title{
+  margin-right: 30px;
+  float: right;
+}
 
 .static_frame{
   background-image: none;
@@ -29,6 +44,7 @@ a {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+
     float: left;
     clear: both;
     max-width: 100%;
@@ -76,4 +92,10 @@ a {
 
 .icon_instagram {
   margin: auto 0 auto 0;
+}
+
+@font-face {
+    font-family: 'KaushanScript';
+    src: url('../fonts/KaushanScript-Regular.otf');
+    font-style: normal;
 }
