@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    text-align: center;
+    font-family: "Lucida Sans Typewriter", "Lucida Console", monaco, "Bitstream Vera Sans Mono", monospace;
+    background: #ffffff;
+    position: absolute;
+}
+
+a {
+  color: inherit;
+}
+
+.header_fixed {
+    background: #ffffff;
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    top: 0;
+    z-index: 1;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    display: table;
+}
+
+.header-fixed > .header-label-left{
+    display: table-cell;
+    color: black;
+    float: left;
+    padding: 20px;
+    font-weight: bold;
+}
+
+.header-fixed > .header-label-right{
+    display: inline-block;
+    color: black;
+    padding: 20px;
+    margin: auto !important;
+    text-align: center !important;
+    text-decoration: none !important;
+}
+
+.container{
+    width: 100%;
+}
+
+#container-header{
+    background: #E6F7F1;
+    z-index: -1;
+    height:90vh;
+}
+
+.img-circle {
+    border-radius: 60%;
+    width: 35%;
+    height: auto;
+    position: relative;
+    top: 50%;
+	  transform:
+    translateY(25%);
+}
+
+/********* viewport divides ***********/
+
+@media (min-width: 200px) {
+  #container-header{
+    height: 75vh;
+  }
+  .img-circle{
+    width: 45%;
+    transform: translateY(30%);
+  }
+
+  .header-label-right{
+    margin: auto;
+  }
+}
+
+@media (min-width: 400px) {
+  .img-circle{
+    transform: translateY(50%);
+  }
+}
+
+@media (min-width: 500px) {
+  #container-header{
+    height: 90vh;
+  }
+
+  .img-circle{
+    transform: translateY(30%);
+  }
+}
+
+@media (min-width: 750px) {
+  .img-circle{
+    width: 35%;
+    transform: translateY(35%);
+  }
+
+  .header-label-right{
+    margin: auto;
+    float: right;
+  }
+}
+
+@media (min-width: 992px) {
+  .img-circle{
+    width: 35%;
+    transform: translateY(20%);
+  }
