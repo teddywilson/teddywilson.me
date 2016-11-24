@@ -53,6 +53,22 @@ a {
     text-decoration: none !important;
 }
 
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 73%}
+    50%{background-position:100% 28%}
+    100%{background-position:0% 73%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 73%}
+    50%{background-position:100% 28%}
+    100%{background-position:0% 73%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 73%}
+    50%{background-position:100% 28%}
+    100%{background-position:0% 73%}
+}
+
 .about-me-container{
   width: 60%;
   top: 50px;
@@ -74,8 +90,13 @@ a {
 }
 
 #container-main{
-    background: #E6F7F1;
+    /*background: #E6F7F1;*/
     z-index: -1;
+    background: linear-gradient(243deg, #fff4da, #ffffff, #e6f7f1);
+    background-size: 600% 600%;
+    -webkit-animation: AnimationName 10s ease infinite;
+    -moz-animation: AnimationName 10s ease infinite;
+    animation: AnimationName 10s ease infinite;
 }
 
 .container-about-me{
@@ -151,7 +172,6 @@ a {
     width: 35%;
     transform: translateY(30%);
   }
-
 }
 
 @media (min-width: 992px) {
