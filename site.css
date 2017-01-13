@@ -53,6 +53,17 @@ a {
     text-decoration: none !important;
 }
 
+.about-fixed {
+    background: #ffffff;
+    width: 40%;
+    margin: 30px;
+    font-size: 15px;
+    text-align: justify;
+    text-justify: inter-word;
+    height: 15vh;
+    position: relative;
+}
+
 @-webkit-keyframes AnimationName {
     0%{background-position:0% 73%}
     50%{background-position:100% 28%}
