@@ -153,11 +153,11 @@ a {
 
 @media (min-width: 400px) {
   #container-main{
-    height: 89vh;
+    height: 80vh;
   }
 
   .footer-fixed{
-    height: 10vh;
+    height: 20vh;
   }
 
   .img-circle {
@@ -179,6 +179,14 @@ a {
 }
 
 @media (min-width: 750px) {
+    #container-main{
+      height: 90vh;
+    }
+
+    .footer-fixed{
+      height: 10vh;
+    }
+
   .img-circle{
     width: 35%;
     transform: translateY(30%);
