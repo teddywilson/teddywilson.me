@@ -197,6 +197,11 @@ a:hover:before {
       width: 65%;
       transform: translateY(70%);
   }
+
+  .footer-label-right{
+    margin: auto;
+    float: right;
+  }
 }
 
 @media (min-width: 500px) {
