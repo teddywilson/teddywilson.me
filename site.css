@@ -9,8 +9,13 @@ body {
 
 a {
   position: relative;
-  color: inherit;;
+  color: inherit;
   text-decoration: none;
+}
+
+li{
+    padding-top: 10px;
+    text-align: left;
 }
 
 a:hover {
