@@ -18,6 +18,10 @@ li{
     text-align: left;
 }
 
+h3{
+    padding-left: 20px;
+}
+
 a:hover {
   color: #000;
 }
@@ -67,7 +71,7 @@ a:hover:before {
     position: relative;
 }
 
-.footer-fixed > .footer-label-left{
+.footer-label-left{
     display: table-cell;
     color: black;
     float: left;
