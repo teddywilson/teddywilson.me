@@ -162,10 +162,13 @@ a:hover:before {
 
 .img-circle {
     border-radius: 60%;
-    width: 35%;
-    height: auto;
+    width: 45%;
+    position: absolute;
     top: 50%;
-	  transform: translateY(25%);
+    left: 50%;
+    max-width:100%;
+    max-height:100%;
+    transform: translateX(-50%) translateY(-60%);
 }
 
 
@@ -175,57 +178,22 @@ a:hover:before {
 }
 
 @media (min-width: 200px) {
+
+    #container-main{
+    height: 80vh;
+  }
+
   .footer-fixed{
     height: 18vh;
   }
 
-  #container-main{
-    height: 80vh;
-  }
-
-  .img-circle{
-    width: 65%;
-    transform: translateY(80%);
-  }
-
   .footer-label-right{
     margin: auto;
-  }
-}
-
-@media (min-width: 400px) {
-  #container-main{
-    height: 80vh;
-  }
-
-  .footer-fixed{
-    height: 20vh;
-  }
-
-  .img-circle {
-      width: 65%;
-      transform: translateY(70%);
-  }
-
-  .footer-label-right{
-    margin: auto;
-    float: right;
   }
 }
 
 @media (min-width: 500px) {
 
-  .img-circle{
-    transform: translateY(20%);
-  }
-
-  .footer-label-right{
-    margin: auto;
-    float: right;
-  }
-}
-
-@media (min-width: 750px) {
     #container-main{
       height: 90vh;
     }
@@ -234,21 +202,25 @@ a:hover:before {
       height: 10vh;
     }
 
-  .img-circle{
-    width: 35%;
-    transform: translateY(30%);
-  }
+    .footer-label-right{
+      margin: auto;
+      float: right;
+    }
+
 }
 
-@media (min-width: 992px) {
-  .img-circle{
-    width: 32%;
-    transform: translateY(25%);
-}
+@media (min-width: 750px) {
 
-/*@media screen and (orientation:landscape) {
-  .img-circle{
-    width: 100%;
-    height: auto;
-  }
-}*/
+    #container-main{
+      height: 90vh;
+    }
+
+    .footer-fixed{
+      height: 10vh;
+    }
+
+    .footer-label-right{
+      margin: auto;
+      float: right;
+    }
+}
