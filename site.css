@@ -145,6 +145,10 @@ a:hover:before {
     animation: AnimationName 10s ease infinite;
 }
 
+#particles-js {
+
+}
+
 .container-about-me{
     background: #FFF4DA;
     height: 15vh;
