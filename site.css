@@ -115,22 +115,6 @@ a:hover:before {
     100%{background-position:0% 73%}
 }
 
-.about-me-container{
-  width: 60%;
-  top: 50px;
-  margin: auto;
-  border-radius: 5px;
-  padding: 30px;
-  margin-bottom: 50px;
-  text-align: left;
-  position: relative;
-  background: #ffffff;
-}
-
-.about-me-description{
-  margin-top: 15px;
-}
-
 .container{
     width: 100%;
 }
@@ -146,22 +130,8 @@ a:hover:before {
 }
 
 #particles-js {
-
-}
-
-.container-about-me{
-    background: #FFF4DA;
-    height: 15vh;
-    z-index: -1;
-    font-size: 13px;
-    vertical-align: middle;
-}
-
-.img-project {
-    width: 250px;
-    height: 175px;
-    margin-top: 50px;
-    margin-left: 50px;
+    width: 100%;
+    height: 100%;
 }
 
 .img-circle {
