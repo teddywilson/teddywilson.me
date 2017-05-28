@@ -120,7 +120,6 @@ a:hover:before {
 }
 
 #container-main{
-    /*background: #E6F7F1;*/
     z-index: -1;
     background: linear-gradient(243deg, #fff4da, #ffffff, #e6f7f1);
     background-size: 600% 600%;
@@ -153,20 +152,24 @@ a:hover:before {
 @media (min-width: 200px) {
 
     #container-main{
-    height: 80vh;
-  }
+        height: 80vh;
+    }
 
-  .footer-fixed{
-    height: 18vh;
-  }
+    .footer-fixed{
+        height: 20vh;
+    }
 
-  .footer-label-right{
-    margin: auto;
-    float: right;
-  }
+    .footer-label-right{
+        margin: auto;
+    }
+
+    .img-circle{
+      visibility: hidden;
+    }
+
 }
 
-@media (min-width: 500px) {
+@media (min-width: 475px) {
 
     #container-main{
       height: 90vh;
@@ -179,6 +182,10 @@ a:hover:before {
     .footer-label-right{
       margin: auto;
       float: right;
+    }
+
+    .img-circle{
+        visibility: visible;
     }
 
 }
