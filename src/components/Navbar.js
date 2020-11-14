@@ -1,12 +1,12 @@
-import React, { useContext } from "react"
-import ThemeContext from "../utils/theme"
-import { Navbar, Nav, Form } from "react-bootstrap"
-import { Link } from "gatsby"
-import "./Fontawesome.js"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import React, { useContext } from "react";
+import ThemeContext from "../utils/theme";
+import { Navbar, Nav, Form } from "react-bootstrap";
+import { Link } from "gatsby";
+import "./Fontawesome.js";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default () => {
-  const { dark, toggleDark, toString } = useContext(ThemeContext)
+  const { dark, toggleDark, toString } = useContext(ThemeContext);
   return (
     <Navbar variant={toString()} fixed="top" collapseOnSelect expand="md">
       <Navbar.Brand className="pl-5 ml-5" as={Link} to="/">
@@ -47,5 +47,5 @@ export default () => {
         </Nav>
       </Navbar.Collapse>
     </Navbar>
-  )
-}
+  );
+};

@@ -1,8 +1,8 @@
-import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import React from "react";
+import { useStaticQuery, graphql } from "gatsby";
 
 export default () => {
-  const { author } = useStaticQuery(query).site.siteMetadata
+  const { author } = useStaticQuery(query).site.siteMetadata;
   return (
     <div className="footer text-muted text-center">
       <span className="m-auto">
@@ -11,8 +11,8 @@ export default () => {
         <a href="https://www.gatsbyjs.org/">Gatsby</a>
       </span>
     </div>
-  )
-}
+  );
+};
 const query = graphql`
   query Author {
     site {
@@ -21,4 +21,4 @@ const query = graphql`
       }
     }
   }
-`
+`;

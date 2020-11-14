@@ -1,22 +1,24 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.org/docs/gatsby-config/
- */
-
 module.exports = {
-  /* Your site config here */
   siteMetadata: {
-    title: `John Doe`,
-    author: `John Doe`,
-    firstName: `John`,
-    lastName: `Doe`,
-    description: `John Doe's personal site`,
-    occupation: `Software Engineer`,
-    keywords: [`John`, `Doe`, `Personal`, `Blog`, `Resume`, `Projects`, `Work`],
+    title: `teddywilson.me`,
+    author: `Teddy Wilson`,
+    firstName: `Teddy`,
+    lastName: `Wilson`,
+    description: `Teddy Wilsons's personal site`,
+    occupation: `Artist & Software Engineer`,
+    keywords: [
+      `Teddy`,
+      `Wilson`,
+      `Personal`,
+      `Blog`,
+      `Resume`,
+      `Projects`,
+      `Work`,
+    ],
     siteUrl:
       process.env.URL || process.env.DEPLOY_URL || `http://localhost:8000`,
     unemployed: true,
+    // TODO(teddywilson) lol remove
     designations: [
       `Coding Monkey`,
       `Jedi Master`,
@@ -102,4 +104,4 @@ module.exports = {
       },
     },
   ],
-}
+};

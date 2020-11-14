@@ -1,14 +1,19 @@
-import React, { useContext } from "react"
-import { graphql } from "gatsby"
-import ThemeContext from "../utils/theme"
-import { PageLayout } from "../components"
-import { SEO } from "../utils"
-import { Container, Image } from "react-bootstrap"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import React, { useContext } from "react";
+import { graphql } from "gatsby";
+import ThemeContext from "../utils/theme";
+import { PageLayout } from "../components";
+import { SEO } from "../utils";
+import { Container, Image } from "react-bootstrap";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default ({ data }) => {
-  const { unemployed, firstName, lastName, occupation } = data.site.siteMetadata
-  const { dark } = useContext(ThemeContext)
+  const {
+    unemployed,
+    firstName,
+    lastName,
+    occupation,
+  } = data.site.siteMetadata;
+  const { dark } = useContext(ThemeContext);
   return (
     <PageLayout>
       <SEO title="Home" />
@@ -109,8 +114,8 @@ export default ({ data }) => {
         </div>
       </Container>
     </PageLayout>
-  )
-}
+  );
+};
 
 export const query = graphql`
   query {
@@ -123,4 +128,4 @@ export const query = graphql`
       }
     }
   }
-`
+`;
