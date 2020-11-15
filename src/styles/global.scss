@@ -76,12 +76,9 @@ iframe {
   transform: translateY(15%);
 }
 
-.icons a i {
-  color: #a5a5a5;
-}
-
 .icon {
-  size: 48px;
+  color: #a5a5a5;
+  margin-right: 2px; // TODO(teddywilson) probably should just space container evenly.
 }
 
 @media (min-width: 250px) {

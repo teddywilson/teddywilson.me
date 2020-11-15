@@ -5,7 +5,7 @@ import { FaLinkedin, FaGithub, FaGoodreads, FaEnvelope } from "react-icons/fa"
 const TYPE_SPEED = 32
 const ICON_SIZE = 16
 
-export default () => {
+export default ({ data }) => {
   return (
     <div className="body">
       <div className="info-container" id="info">
@@ -40,21 +40,23 @@ export default () => {
           </h3>
           <h6>
             <u>Contact</u>.
+          </h6>
+          <h4>
             <div className="icons">
               <a href="https://www.linkedin.com/in/teddy-wilson-6287ab86/">
-                <FaLinkedin size={ICON_SIZE} />
+                <FaLinkedin size={ICON_SIZE} className="icon" />
               </a>
               <a href="https://github.com/teddywilson">
-                <FaGithub size={ICON_SIZE} />
+                <FaGithub size={ICON_SIZE} className="icon" />
               </a>
               <a href="https://www.goodreads.com/review/list/11857663?shelf=read">
-                <FaGoodreads size={ICON_SIZE} />
+                <FaGoodreads size={ICON_SIZE} className="icon" />
               </a>
               <a href="mailto:hello@teddywilson.me">
-                <FaEnvelope size={ICON_SIZE} />
+                <FaEnvelope size={ICON_SIZE} className="icon" />
               </a>
             </div>
-          </h6>
+          </h4>
           <h6>
             <u>Newsletter</u>.
           </h6>
