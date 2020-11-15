@@ -1,10 +1,11 @@
 import React from "react"
 import Typed from "react-typed"
 import { FaLinkedin, FaGithub, FaGoodreads, FaEnvelope } from "react-icons/fa"
+import { Helmet } from "react-helmet"
 
 const TYPE_SPEED = 32
 
-export default () => {
+export default ({ data }) => {
   var artistSubheadingLink = (
     <a href="https://clotheslinerecordings.com">Artist</a>
   )
@@ -13,6 +14,11 @@ export default () => {
   )
   return (
     <div className="body">
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Teddy Wilson | home</title>
+        <link rel="canonical" href="http://teddywilson.me" />
+      </Helmet>
       <div className="info-container" id="info">
         <div className="header">
           {" > "}
