@@ -1,9 +1,11 @@
-import React, { useContext } from "react"
+import React from "react"
 import Typed from "react-typed"
+import { FaLinkedin, FaGithub, FaGoodreads, FaEnvelope } from "react-icons/fa"
 
-const TYPE_SPEED = 35
+const TYPE_SPEED = 32
+const ICON_SIZE = 16
 
-export default ({ data }) => {
+export default () => {
   return (
     <div className="body">
       <div className="info-container" id="info">
@@ -38,6 +40,20 @@ export default ({ data }) => {
           </h3>
           <h6>
             <u>Contact</u>.
+            <div className="icons">
+              <a href="https://www.linkedin.com/in/teddy-wilson-6287ab86/">
+                <FaLinkedin size={ICON_SIZE} />
+              </a>
+              <a href="https://github.com/teddywilson">
+                <FaGithub size={ICON_SIZE} />
+              </a>
+              <a href="https://www.goodreads.com/review/list/11857663?shelf=read">
+                <FaGoodreads size={ICON_SIZE} />
+              </a>
+              <a href="mailto:hello@teddywilson.me">
+                <FaEnvelope size={ICON_SIZE} />
+              </a>
+            </div>
           </h6>
           <h6>
             <u>Newsletter</u>.
