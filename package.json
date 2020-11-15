@@ -1,8 +1,8 @@
 {
-  "name": "john-doe-starter-site",
+  "name": "www.teddywilson.me",
   "private": true,
-  "description": "A personal site built on the bare-bones starter for Gatsby",
-  "version": "0.1.0",
+  "description": "Teddy Wilson's personal site",
+  "version": "1.0.0",
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
@@ -51,9 +51,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/surudhb/gatsby-personal-site-template"
+    "url": "https://github.com/teddywilson/teddywilson.me"
   },
   "bugs": {
-    "url": "https://github.com/surudhb/gatsby-personal-site-template/issues"
+    "url": "https://github.com/teddywilson/teddywilson.me"
   }
 }
