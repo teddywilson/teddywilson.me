@@ -1,10 +1,20 @@
 import React, { useContext } from "react"
+import Typed from "react-typed"
+
+const TYPE_SPEED = 35
 
 export default ({ data }) => {
   return (
     <div className="body">
       <div className="info-container" id="info">
-        <div className="header">Teddy Wilson</div>
+        <div className="header">
+          {" > "}
+          <Typed
+            strings={[`Teddy Wilson`]}
+            typeSpeed={TYPE_SPEED}
+            showCursor={false}
+          />
+        </div>
         <div>
           <a href="https://clotheslinerecordings.com">
             <h5>Artist</h5>
