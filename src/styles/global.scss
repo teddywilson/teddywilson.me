@@ -16,32 +16,26 @@ a {
   color: inherit;
 }
 
-h1 {
-  font-weight: 400;
-  font-size: 32px;
-  color: #37474f;
-}
-
-h3 {
+.section-content-lg {
   font-size: 18px;
   font-weight: 500;
   margin-top: 0;
 }
 
-h4 {
+.section-content-md {
   font-size: 15px;
   font-weight: 500;
   margin-top: 0;
 }
 
-h5 {
+.subheading {
   font-size: 12px;
   margin-top: 0;
   font-weight: 500;
   display: inline;
 }
 
-h6 {
+.section-header {
   font-size: 16px;
   font-weight: 300;
   margin-top: 48px;
@@ -78,7 +72,9 @@ iframe {
 
 .icon {
   color: #a5a5a5;
-  margin-right: 2px; // TODO(teddywilson) probably should just space container evenly.
+  margin-right: 4px; // TODO(teddywilson) probably should just space container evenly.
+  height: 24px;
+  width: 24px;
 }
 
 @media (min-width: 250px) {

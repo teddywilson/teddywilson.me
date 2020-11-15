@@ -3,9 +3,14 @@ import Typed from "react-typed"
 import { FaLinkedin, FaGithub, FaGoodreads, FaEnvelope } from "react-icons/fa"
 
 const TYPE_SPEED = 32
-const ICON_SIZE = 16
 
-export default ({ data }) => {
+export default () => {
+  var artistSubheadingLink = (
+    <a href="https://clotheslinerecordings.com">Artist</a>
+  )
+  var softwareEngineerSubheadingLink = (
+    <a href="https://github.com/teddywilson">Software Engineer</a>
+  )
   return (
     <div className="body">
       <div className="info-container" id="info">
@@ -17,53 +22,47 @@ export default ({ data }) => {
             showCursor={false}
           />
         </div>
-        <div>
-          <a href="https://clotheslinerecordings.com">
-            <h5>Artist</h5>
-          </a>
-          <h5> & </h5>
-          <a href="https://github.com/teddywilson">
-            <h5>Software Engineer</h5>
-          </a>{" "}
-          <h5>based in New York</h5>
+        <div className="subheading">
+          {artistSubheadingLink} & {softwareEngineerSubheadingLink} based in New
+          York
         </div>
         <div id="items">
-          <h6>
+          <div className="section-header">
             <u>Work</u>.
-          </h6>
-          <h3>
+          </div>
+          <div className="section-content-lg">
             Building out{" "}
             <a href="https://research.google/pubs/pub44824/">
               Network Load Balancing
             </a>{" "}
             infrastructure at <a href="https://www.google.com/">Google</a>
-          </h3>
-          <h6>
+          </div>
+          <div className="section-header">
             <u>Contact</u>.
-          </h6>
-          <h4>
-            <div className="icons">
+          </div>
+          <div className="section-content-md">
+            <div>
               <a href="https://www.linkedin.com/in/teddy-wilson-6287ab86/">
-                <FaLinkedin size={ICON_SIZE} className="icon" />
+                <FaLinkedin className="icon" />
               </a>
               <a href="https://github.com/teddywilson">
-                <FaGithub size={ICON_SIZE} className="icon" />
+                <FaGithub className="icon" />
               </a>
               <a href="https://www.goodreads.com/review/list/11857663?shelf=read">
-                <FaGoodreads size={ICON_SIZE} className="icon" />
+                <FaGoodreads className="icon" />
               </a>
               <a href="mailto:hello@teddywilson.me">
-                <FaEnvelope size={ICON_SIZE} className="icon" />
+                <FaEnvelope className="icon" />
               </a>
             </div>
-          </h4>
-          <h6>
+          </div>
+          <div className="section-header">
             <u>Newsletter</u>.
-          </h6>
-          <h4>
+          </div>
+          <div className="section-content-md">
             Subscribe to my newsletter{" "}
             <a href="https://forms.gle/wC2Z4mVVMHV1itVU8">here</a>
-          </h4>
+          </div>
         </div>
       </div>
     </div>
