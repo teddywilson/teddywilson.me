@@ -16,6 +16,13 @@ a {
   color: inherit;
 }
 
+iframe {
+  margin: none;
+  padding: none;
+  display: inline-block;
+  line-height: 0;
+}
+
 .section-content-lg {
   font-size: 18px;
   font-weight: 500;
@@ -29,7 +36,7 @@ a {
 }
 
 .subheading {
-  font-size: 12px;
+  font-size: 14px;
   margin-top: 0;
   font-weight: 500;
   display: inline;
@@ -42,13 +49,6 @@ a {
   margin-bottom: 6px;
   color: #616161;
   opacity: 0.6;
-}
-
-iframe {
-  margin: none;
-  padding: none;
-  display: inline-block;
-  line-height: 0;
 }
 
 .header {
@@ -93,11 +93,5 @@ iframe {
   }
   .header {
       font-size: 32px;
-  }
-  h5 {
-      font-size: 13px;
-  }
-  h6 {
-      font-size: 13px;
   }
 }
