@@ -1,107 +1,106 @@
-@import "../../static/fonts/fonts.css";
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Karla";
+}
 
-@import "themes";
-
-html,
-body {
-  margin: 0;
-  font-family: "Raleway", sans-serif;
-  font-display: swap;
+#container,
+body,
+html {
   height: 100%;
   width: 100%;
-  // font-size: calc(16px * ((80vw - 700px) / (1600 - 400)));
-  // line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px) / (1600 - 300)));
 }
 
-* {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+a {
+  color: inherit;
 }
 
-.app-container * {
-  transition: color 0.45s ease-in-out;
-  transition: background 0.45s ease-in-out;
+h1 {
+  font-weight: 400;
+  font-size: 32px;
+  color: #37474f;
 }
 
-.bg-none {
-  background: rgba(0, 0, 0, 0) !important;
+h3 {
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 0;
 }
 
-.aurebesh:hover {
-  font-family: "Aurebesh", sans-serif;
-  font-display: swap;
+h4 {
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 0;
 }
 
-.i-5 {
-  text-indent: 5vmin;
+h5 {
+  font-size: 12px;
+  margin-top: 0;
+  font-weight: 500;
+  display: inline;
 }
 
-/** Toggle Switch Styling START */
-.custom-control-input:focus:not(:checked) ~ .custom-control-label::before {
-  border: none;
-  box-shadow: none;
+h6 {
+  font-size: 16px;
+  font-weight: 300;
+  margin-top: 48px;
+  margin-bottom: 6px;
+  color: #616161;
+  opacity: 0.6;
 }
 
-.custom-control-input:focus ~ .custom-control-label::before {
-  box-shadow: none;
+iframe {
+  margin: none;
+  padding: none;
+  display: inline-block;
+  line-height: 0;
 }
 
-.custom-control-input ~ .custom-control-label {
-  outline: none;
-  border: none;
-  box-shadow: none;
+.header {
+  font-weight: 400;
+  font-size: 30px;
+  color: #37474f;
+  padding-bottom: 8px;
+  font-weight: 700;
 }
 
-// light mode
-.custom-control-input ~ .custom-control-label::before {
-  border-color: $yellow;
-  background-color: $yellow;
+.info-container {
+  box-shadow: 0 1px 16px 0 rgba(0, 0, 0, 0.12);
+  padding: 20px;
+  border-radius: 22px;
+  position: absolute;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 40px;
+  transform: translateY(15%);
 }
 
-.custom-switch .custom-control-input ~ .custom-control-label::after {
-  background-color: $white;
+.icons a i {
+  color: #a5a5a5;
 }
 
-// dark mode
-.custom-control-input:checked ~ .custom-control-label::before {
-  border-color: $black;
-  background-color: $black;
-}
-
-.custom-switch .custom-control-input:checked ~ .custom-control-label::after {
-  background-color: $red;
-}
-/** Toggle Switch Styling END */
-
-/** Home Page Icon Styling START */
-.icons-container a {
-  margin: 0 1rem;
-}
-
-.icons {
-  font-size: 3.75rem;
-  margin: 0.1rem;
-  color: $gray-600;
-}
-
-.brand-icon {
-  font-size: 2.75rem;
-  color: $gray-700;
-  &:hover {
-    color: $faded-red;
-  }
-  &.empire {
-    border-radius: 50%;
-    color: $white;
-    background: $black;
-    &:hover {
-      color: $black;
-      background: $white;
-    }
+@media (min-width: 250px) {
+  .header {
+      font-size: 22px;
   }
 }
-/** Home Page Icon Styling END */
 
-.unemployed {
-  font-size: 1.35rem;
+@media (min-width: 500px) {
+  .info-container {
+      max-width: 550px;
+      width: 40%;
+      left: 0;
+      margin-left: 110px;
+      transform: translateY(40%);
+  }
+  .header {
+      font-size: 32px;
+  }
+  h5 {
+      font-size: 13px;
+  }
+  h6 {
+      font-size: 13px;
+  }
 }

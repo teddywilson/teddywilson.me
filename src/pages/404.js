@@ -1,10 +1,5 @@
-import React from "react";
-import { PageTitle, PageLayout } from "../components";
+import React from "react"
 
 export default () => {
-  return (
-    <PageLayout>
-      <PageTitle>404: Not Found</PageTitle>
-    </PageLayout>
-  );
-};
+  return <div></div>
+}
