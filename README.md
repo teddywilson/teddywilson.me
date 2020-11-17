@@ -1,3 +1,3 @@
 # teddywilson.me
 
-My personal site, built using [Gatsby](https://github.com/gatsbyjs/gatsby).
+My personal site, built with [Gatsby](https://github.com/gatsbyjs/gatsby).
