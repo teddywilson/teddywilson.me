@@ -5,9 +5,9 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: "src",
-        path: `${__dirname}/src/`,
-      },
+        name: 'src',
+        path: `${__dirname}/src/`
+      }
     },
     {
       resolve: `gatsby-plugin-manifest`,
@@ -16,14 +16,14 @@ module.exports = {
         short_name: `GatsbyJS`,
         start_url: `/`,
         display: `minimal-ui`,
-        icon: `assets/latte.svg`,
-      },
+        icon: `assets/latte.svg`
+      }
     },
     `gatsby-plugin-sass`,
     `gatsby-transformer-remark`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-offline`,
-    `gatsby-plugin-react-helmet`,
-  ],
-}
+    `gatsby-plugin-react-helmet`
+  ]
+};

@@ -1,17 +1,15 @@
-import React from "react"
-import Typed from "react-typed"
-import { FaLinkedin, FaGithub, FaGoodreads, FaEnvelope } from "react-icons/fa"
-import { Helmet } from "react-helmet"
+import React from 'react';
+import Typed from 'react-typed';
+import { FaLinkedin, FaGithub, FaGoodreads, FaEnvelope } from 'react-icons/fa';
+import { Helmet } from 'react-helmet';
 
-const TYPE_SPEED = 32
+const TYPE_SPEED = 32;
 
 export default ({ data }) => {
-  var artistSubheadingLink = (
-    <a href="https://clotheslinerecordings.com">Artist</a>
-  )
+  var artistSubheadingLink = <a href="https://clotheslinerecordings.com">Artist</a>;
   var softwareEngineerSubheadingLink = (
     <a href="https://github.com/teddywilson">Software Engineer</a>
-  )
+  );
   return (
     <div className="body">
       <Helmet>
@@ -21,26 +19,18 @@ export default ({ data }) => {
       </Helmet>
       <div className="info-container" id="info">
         <div className="header">
-          {" > "}
-          <Typed
-            strings={[`Teddy Wilson`]}
-            typeSpeed={TYPE_SPEED}
-            showCursor={false}
-          />
+          {' > '}
+          <Typed strings={[`Teddy Wilson`]} typeSpeed={TYPE_SPEED} showCursor={false} />
         </div>
         <div className="subheading">
-          {artistSubheadingLink} & {softwareEngineerSubheadingLink} based in New
-          York
+          {artistSubheadingLink} & {softwareEngineerSubheadingLink} based in New York
         </div>
         <div id="items">
           <div className="section-header">
             <u>Work</u>.
           </div>
           <div className="section-content-lg">
-            Building out{" "}
-            <a href="https://research.google/pubs/pub44824/">
-              Network Load Balancing
-            </a>{" "}
+            Building out <a href="https://research.google/pubs/pub44824/">Network Load Balancing</a>{' '}
             infrastructure at <a href="https://www.google.com/">Google</a>
           </div>
           <div className="section-header">
@@ -66,11 +56,10 @@ export default ({ data }) => {
             <u>Newsletter</u>.
           </div>
           <div className="section-content-md">
-            Subscribe to my newsletter{" "}
-            <a href="https://forms.gle/wC2Z4mVVMHV1itVU8">here</a>
+            Subscribe to my newsletter <a href="https://forms.gle/wC2Z4mVVMHV1itVU8">here</a>
           </div>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
