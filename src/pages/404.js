@@ -4,6 +4,8 @@ import Index from './index.js';
 /**
  * Force renders Index component; 404 page is not needed at the moment.
  */
-export default () => {
+const NotFound = () => {
   return <Index />;
 };
+
+export default NotFound;
