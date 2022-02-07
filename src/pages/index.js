@@ -47,6 +47,10 @@ const Index = () => {
         <ul>
           <li><a href="https://reynolds-band.bandcamp.com/album/intent"><i>reynolds</i> – "Intent" [+^!*]</a></li>
         </ul>
+        <div className="date">2017</div>
+        <ul>
+          <li><a href="https://soundcloud.com/familyvision/sets/split-family-vision-reynolds"><i>Family Vision / reynolds</i> – split [+^*]</a></li>
+        </ul>
       </div>
     </div>
   );
