@@ -1,7 +1,30 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
+import Me from '../me.jpg'
+
+const makeKeyEntry = (key, value) => {
+  return {key, value}
+}
+
+const KEY = [
+  makeKeyEntry('+', 'engineered'),
+  makeKeyEntry('^', 'produced'),
+  makeKeyEntry('!', 'mastered'),
+  makeKeyEntry('*', 'art'),
+]
 
 const Index = () => {
+
+  const makeKey = () => {
+    let result = []
+    KEY.forEach(entry => {
+      result.push(
+        <><b>{entry.key}</b>[<i>{entry.value}</i>]&nbsp;</>,
+      )
+    })
+    return (<>{result}</>);
+  };
+
   return (
     <div className="body">
       <Helmet>
@@ -10,16 +33,19 @@ const Index = () => {
         <link rel="canonical" href="http://teddywilson.me" />
       </Helmet>
       <div className="content">
-        <div className="header">teddy wilson</div>
         <div className="subheader">
-          <div className="subheader-nyc">nyc</div>
+          <div className="subheader-nyc">teddy wilson</div>
           <div className="subheader-divider">&nbsp;|&nbsp;</div>
           <div className="subheader-email"><a href="mailto:hello@teddywilson.me">hello@teddywilson.me</a></div>
         </div>
-        <div className="key">+ engineered&nbsp;&nbsp;^ produced&nbsp;&nbsp;! mastered&nbsp;&nbsp;* art</div>
+        <div>artist and engineer living in brooklyn, ny</div>
+        <img src={Me} height={500} style={{
+          marginTop: 8
+        }}/>
+        <div className="key">{makeKey()}</div>
         <div className="date">2020</div>
         <ul>
-          <li><a href="https://reynolds-band.bandcamp.com/album/off-peak-day-return"><i>reynolds</i> - "Off-Peak Day Return" [+^]</a></li>
+          <li><a href="https://reynolds-band.bandcamp.com/album/off-peak-day-return"><i>reynolds</i> – "Off-Peak Day Return" [+^]</a></li>
           <li><a href="https://linocutlinocut.bandcamp.com/album/linocut"><i>Linocut</i> – "Linocut" [!*]</a></li>
         </ul>
         <div className="date">2018</div>

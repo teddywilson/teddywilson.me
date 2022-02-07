@@ -23,19 +23,20 @@ ul {
 }
 
 .header {
-  font-size: 72px;
+  font-size: 24px;
   font-weight: 900;
   font-family:'Segoe UI', Geneva, sans-serif;
 }
 
 .subheader {
   font-family:Tahoma, Geneva, Verdana, sans-serif;  
+  margin-bottom: 4px;
 }
 
 .subheader-nyc {
-  font-size: 36px;
-  font-weight: 200;
-  margin-bottom: 8px;
+  font-size: 24px;
+  font-weight: 900;
+  font-family:'Segoe UI', Geneva, sans-serif;
   display: inline-block;
 }
 
@@ -48,12 +49,13 @@ ul {
 }
 
 .key {
-  margin-top: 16px;
+  margin-top: 8px;
   font-family:Tahoma, Geneva, Verdana, sans-serif;  
 }
 
 .date {
   margin-top: 16px;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-weight: 600;
+  font-family:Tahoma, Geneva, Verdana, sans-serif;  
+  font-weight: 500;
+  text-decoration: underline;
 }
