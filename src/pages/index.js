@@ -2,17 +2,6 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import Me from '../me.jpg'
 
-const makeKeyEntry = (key, value) => {
-  return { key, value }
-}
-
-const KEY = [
-  makeKeyEntry('+', 'engineered'),
-  makeKeyEntry('^', 'produced'),
-  makeKeyEntry('!', 'mastered'),
-  makeKeyEntry('*', 'art'),
-]
-
 const Index = () => {
   return (
     <div className="body">
@@ -32,12 +21,18 @@ const Index = () => {
         <img src={Me} height={500} style={{
           marginTop: 8
         }} />
-        <div className="key">{KEY.reduce((prev, entry) => {
-          prev.push(
-            <><b>{entry.key}</b>[<i>{entry.value}</i>]&nbsp;</>,
-          )
-          return prev
-        }, [])}</div>
+        <div className="key">{[
+          ['+', 'engineered'],
+          ['^', 'produced'],
+          ['!', 'mastered'],
+          ['*', 'art'],
+        ]
+          .reduce((prev, entry) => {
+            prev.push(
+              <><b>{entry[0]}</b>[<i>{entry[1]}</i>]&nbsp;</>,
+            )
+            return prev
+          }, [])}</div>
         <div className="date">2020</div>
         {/* TODO(teddywilson): Lol @ the following 'raw' html. Eventually move into some kind of CMS; works for now.*/}
         <ul>
