@@ -2,12 +2,6 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import Me from '../me.jpg'
 
-// NOTE: use this for testing.
-import * as rdd from 'react-device-detect';
-rdd.isMobile = true;
-
-import { isMobile } from 'react-device-detect';
-
 const makeKeyEntry = (key, value) => {
   return {key, value}
 }
@@ -20,15 +14,14 @@ const KEY = [
 ]
 
 const Index = () => {
-
+  
   const makeKey = () => {
-    let result = []
-    KEY.forEach(entry => {
-      result.push(
+    return (<>{KEY.reduce((prev, entry) => {
+      prev.push(
         <><b>{entry.key}</b>[<i>{entry.value}</i>]&nbsp;</>,
       )
-    })
-    return (<>{result}</>);
+      return prev
+    }, [])}</>)
   };
 
   return (
@@ -50,6 +43,7 @@ const Index = () => {
         }}/>
         <div className="key">{makeKey()}</div>
         <div className="date">2020</div>
+        {/* Lol @ the following 'raw' html */}
         <ul>
           <li><a href="https://reynolds-band.bandcamp.com/album/off-peak-day-return"><i>reynolds</i> – "Off-Peak Day Return" [+^]</a></li>
           <li><a href="https://linocutlinocut.bandcamp.com/album/linocut"><i>Linocut</i> – "Linocut" [!*]</a></li>
