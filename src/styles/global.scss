@@ -15,36 +15,37 @@ html {
 }
 
 ul {
-  margin-left: 20px;
+  margin-left: 16px;
 }
 
 .content {
   padding: 24px;
 }
 
-.header {
-  font-size: 24px;
-  font-weight: 900;
-  font-family:'Segoe UI', Geneva, sans-serif;
+.date {
+  margin-top: 16px;
+  font-family:Tahoma, Geneva, Verdana, sans-serif;  
+  font-weight: 500;
+  text-decoration: underline;
 }
 
-.subheader {
+.header {
   font-family:Tahoma, Geneva, Verdana, sans-serif;  
   margin-bottom: 4px;
 }
 
-.subheader-nyc {
-  font-size: 24px;
-  font-weight: 900;
+.header-title {
+  font-size: 22px;
+  font-weight: bold;
   font-family:'Segoe UI', Geneva, sans-serif;
   display: inline-block;
 }
 
-.subheader-divider {
+.header-divider {
   display: inline-block;
 }
 
-.subheader-email {
+.header-subtitle {
   display: inline-block;
 }
 
@@ -53,9 +54,8 @@ ul {
   font-family:Tahoma, Geneva, Verdana, sans-serif;  
 }
 
-.date {
-  margin-top: 16px;
-  font-family:Tahoma, Geneva, Verdana, sans-serif;  
-  font-weight: 500;
-  text-decoration: underline;
+@media only screen and (max-width: 390px) {
+  * {
+    font-size: 14px;
+  }
 }

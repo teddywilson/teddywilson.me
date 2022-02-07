@@ -2,6 +2,12 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import Me from '../me.jpg'
 
+// NOTE: use this for testing.
+import * as rdd from 'react-device-detect';
+rdd.isMobile = true;
+
+import { isMobile } from 'react-device-detect';
+
 const makeKeyEntry = (key, value) => {
   return {key, value}
 }
@@ -33,10 +39,10 @@ const Index = () => {
         <link rel="canonical" href="http://teddywilson.me" />
       </Helmet>
       <div className="content">
-        <div className="subheader">
-          <div className="subheader-nyc">teddy wilson</div>
-          <div className="subheader-divider">&nbsp;|&nbsp;</div>
-          <div className="subheader-email"><a href="mailto:hello@teddywilson.me">hello@teddywilson.me</a></div>
+        <div className="header">
+          <div className="header-title">teddy wilson</div>
+          <div className="header-divider">&nbsp;|&nbsp;</div>
+          <div className="header-subtitle"><a href="mailto:hello@teddywilson.me">hello@teddywilson.me</a></div>
         </div>
         <div>artist and engineer living in brooklyn, ny</div>
         <img src={Me} height={500} style={{
@@ -48,6 +54,10 @@ const Index = () => {
           <li><a href="https://reynolds-band.bandcamp.com/album/off-peak-day-return"><i>reynolds</i> – "Off-Peak Day Return" [+^]</a></li>
           <li><a href="https://linocutlinocut.bandcamp.com/album/linocut"><i>Linocut</i> – "Linocut" [!*]</a></li>
         </ul>
+        <div className="date">2019</div>
+        <ul>
+          <li><a href="https://familyvision.bandcamp.com/album/geotag-image"><i>Family Vision</i> – "Geotag / Image" [!]</a></li>
+        </ul>        
         <div className="date">2018</div>
         <ul>
           <li><a href="https://reynolds-band.bandcamp.com/album/intent"><i>reynolds</i> – "Intent" [+^!*]</a></li>
