@@ -33,12 +33,12 @@ const Index = () => {
             )
             return prev
           }, [])}</div>
+        {/* TODO(teddywilson): Lol @ the following 'raw' html. Eventually move into some kind of CMS; works for now. */}
         <div className="date">2022</div>
         <ul>
           <li><a href="https://drive.google.com/file/d/1Q469iHmKDrnSpRKGwnA8-lBaC-DQsO6n/view?usp=sharing">Favmily Vision / Blood tour flier [*]</a></li>
         </ul>
         <div className="date">2020</div>
-        {/* TODO(teddywilson): Lol @ the following 'raw' html. Eventually move into some kind of CMS; works for now. */}
         <ul>
           <li><a href="https://reynolds-band.bandcamp.com/album/off-peak-day-return"><i>reynolds</i> – "Off-Peak Day Return" [+^]</a></li>
           <li><a href="https://linocutlinocut.bandcamp.com/album/linocut"><i>Linocut</i> – "Linocut" [!*]</a></li>
