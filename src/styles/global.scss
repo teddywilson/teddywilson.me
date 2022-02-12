@@ -1,7 +1,7 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: broadsheet, serif;
+  font-family:Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #container,
@@ -9,7 +9,7 @@ body,
 html {
   height: 100%;
   width: 100%;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 ul {
@@ -33,7 +33,7 @@ ul {
 .header-title {
   font-size: 22px;
   font-weight: bold;
-  font-family: broadsheet, serif;
+  font-family:'Segoe UI', Geneva, sans-serif;
   display: inline-block;
 }
 
@@ -41,26 +41,8 @@ ul {
   display: inline-block;
 }
 
-li > a {
-  font-family: teimer-web, serif;
-  font-style: normal;
-  font-weight: 300;
-}
-
-a > i {
-  font-family: teimer-web, serif;
-
-}
-
-
 .header-subtitle {
   display: inline-block;
-  font-family: 'Courier New', Courier, monospace;
-}
-
-#email {
-  font-size: 16px;
-
 }
 
 .key {
