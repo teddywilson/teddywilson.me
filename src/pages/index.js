@@ -14,7 +14,7 @@ const Index = () => {
         <div className="header">
           <div className="header-title">teddy wilson</div>
           <div className="header-divider">&nbsp;|&nbsp;</div>
-          <div className="header-subtitle"><a href="mailto:hello@teddywilson.me">hello@teddywilson.me</a></div>
+          <div className="header-subtitle"><a href="mailto:hello@teddywilson.me" id="email">hello@teddywilson.me</a></div>
         </div>
         <div>artist and engineer living in brooklyn, ny</div>
         {/* TODO(teddywilson): Dynamic image height, or something. Who cares. */}
@@ -33,8 +33,12 @@ const Index = () => {
             )
             return prev
           }, [])}</div>
+        <div className="date">2022</div>
+        <ul>
+          <li><a href="https://drive.google.com/file/d/1Q469iHmKDrnSpRKGwnA8-lBaC-DQsO6n/view?usp=sharing">Favmily Vision / Blood tour flier [*]</a></li>
+        </ul>
         <div className="date">2020</div>
-        {/* TODO(teddywilson): Lol @ the following 'raw' html. Eventually move into some kind of CMS; works for now.*/}
+        {/* TODO(teddywilson): Lol @ the following 'raw' html. Eventually move into some kind of CMS; works for now. */}
         <ul>
           <li><a href="https://reynolds-band.bandcamp.com/album/off-peak-day-return"><i>reynolds</i> – "Off-Peak Day Return" [+^]</a></li>
           <li><a href="https://linocutlinocut.bandcamp.com/album/linocut"><i>Linocut</i> – "Linocut" [!*]</a></li>
