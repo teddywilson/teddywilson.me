@@ -21,6 +21,7 @@ const Index = () => {
         <img src={Me} height={500} style={{
           marginTop: 8
         }} />
+      </div>
     </div>
   );
 };
