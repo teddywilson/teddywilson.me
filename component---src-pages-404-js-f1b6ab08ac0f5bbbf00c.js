@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkwww_teddywilson_me=self.webpackChunkwww_teddywilson_me||[]).push([[883],{429:function(e,w,l){l.r(w);var t=l(7294),n=l(5919);w.default=()=>t.createElement(n.default,null)}}]);
+//# sourceMappingURL=component---src-pages-404-js-f1b6ab08ac0f5bbbf00c.js.map
