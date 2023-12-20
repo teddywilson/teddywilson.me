@@ -7,7 +7,7 @@ const Index = () => {
     <div className="body">
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Teddy Wilson | home</title>
+        <title>Teddy Wilson</title>
         <link rel="canonical" href="http://teddywilson.me" />
       </Helmet>
       <div className="content">
