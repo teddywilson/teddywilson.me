@@ -16,7 +16,7 @@ module.exports = {
         short_name: `GatsbyJS`,
         start_url: `/`,
         display: `minimal-ui`,
-        icon: `assets/network.svg`
+        icon: `assets/spiral.svg`
       }
     },
     `gatsby-plugin-sass`,
