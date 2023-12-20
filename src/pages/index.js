@@ -18,7 +18,7 @@ const Index = () => {
         </div>
         <div>artist and engineer living in brooklyn, ny</div>
         {/* TODO(teddywilson): Dynamic image height, or something. Who cares. */}
-        <img src={Me} height={500} style={{
+        <img src={Me} height={425} style={{
           marginTop: 8
         }} />
       </div>
