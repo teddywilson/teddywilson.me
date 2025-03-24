@@ -10,7 +10,7 @@ export default function Home() {
         <meta name="description" content="Artist based in Brooklyn, New York" />
       </Head>
       <main className="px-32 py-16 text-left">
-        <header className="mb-16">
+        <header className="mb-8">
           <h1 className="text-2xl font-semibold mb-4">Teddy Wilson</h1>
           <p className="text-sm text-gray-900">Artist based in Brooklyn, New York</p>
           <p className="text-sm">
@@ -26,7 +26,7 @@ export default function Home() {
           ))}
         </section>
 
-        <div className="mb-12" style={{ width: '100%', maxWidth: '200px' }}>
+        <div className="mb-16 mt-2" style={{ width: '100%', maxWidth: '160px' }}>
           <img src={`/drawings/laying-guy.jpg`} />
         </div>
       </main>
