@@ -1,6 +1,6 @@
-import Head from "next/head";
-import paintings from "../data/paintings.json";
-import GalleryImage from "../components/GalleryImage";
+import Head from 'next/head';
+import paintings from '../data/paintings.json';
+import GalleryImage from '../components/GalleryImage';
 
 export default function Home() {
   return (
@@ -12,9 +12,7 @@ export default function Home() {
       <main className="px-32 py-16 text-left">
         <header className="mb-16">
           <h1 className="text-2xl font-semibold mb-4">Teddy Wilson</h1>
-          <p className="text-sm text-gray-900">
-            Artist based in Brooklyn, New York
-          </p>
+          <p className="text-sm text-gray-900">Artist based in Brooklyn, New York</p>
           <p className="text-sm">
             <a href="mailto:hello@teddywilson.me" className="underline">
               hello@teddywilson.me
@@ -27,6 +25,10 @@ export default function Home() {
             <GalleryImage key={painting.filename} painting={painting} />
           ))}
         </section>
+
+        <div className="mb-12" style={{ width: '100%', maxWidth: '200px' }}>
+          <img src={`/drawings/laying-guy.jpg`} />
+        </div>
       </main>
     </>
   );
