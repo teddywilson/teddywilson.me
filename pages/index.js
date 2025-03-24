@@ -19,9 +19,13 @@ export default function Home() {
               hello@teddywilson.me
             </a>
           </p>
+          <p className="text-sm text-gray-900">
+            NOTE: this site is in progress. These paintings are not finished works, and these
+            photographs are haphazard, at best.
+          </p>
         </header>
 
-        <section className="flex flex-col items-start">
+        <section className="flex flex-col items-stargt">
           {paintings.map((painting) => (
             <GalleryImage key={painting.filename} painting={painting} />
           ))}
