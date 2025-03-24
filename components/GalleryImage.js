@@ -6,7 +6,7 @@ export default function GalleryImage({ painting }) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="mb-12" style={{ width: '100%', maxWidth: '400px' }}>
+    <div className="mb-8 md:mb-12" style={{ width: '100%', maxWidth: '400px' }}>
       <img
         src={`/paintings/${filename}`}
         alt={title}
