@@ -8,6 +8,7 @@ export default function Home() {
       <Head>
         <title>Teddy Wilson</title>
         <meta name="description" content="Artist based in Brooklyn, New York" />
+        <link rel="icon" type="image/svg" href="/favicon.svg" />
       </Head>
       <main className="px-8 md:px-32 py-8 md:py-12 text-left">
         <header className="mb-8 md:mb-16">
