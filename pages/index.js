@@ -19,11 +19,11 @@ export default function Home() {
               hello@teddywilson.me
             </a>
           </p>
-          <div className="mt-4"></div>
+          {/* <div className="mt-4"></div>
           <p className="text-sm text-gray-900">
             NOTE: this site is in progress. These paintings are not finished works, and these
             photographs are haphazard, at best.
-          </p>
+          </p> */}
         </header>
 
         <section className="flex flex-col items-stargt">
