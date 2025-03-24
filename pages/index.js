@@ -26,7 +26,7 @@ export default function Home() {
           ))}
         </section>
 
-        <div className="mb-12 mt-2" style={{ width: '100%', maxWidth: '160px' }}>
+        <div className="mb-12 mt-2" style={{ width: '100%', maxWidth: '144px' }}>
           <img src={`/drawings/laying-guy.jpg`} />
         </div>
       </main>
