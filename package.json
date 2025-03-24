@@ -1,58 +1,20 @@
 {
-  "name": "www.teddywilson.me",
-  "private": true,
-  "description": "Teddy Wilson's personal site",
+  "name": "teddywilson-portfolio",
   "version": "1.0.0",
-  "license": "MIT",
   "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "start": "npm run develop",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "clean-serve": "gatsby clean && gatsby build && gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-    "lint": "eslint .",
-    "lint:fix": "eslint --fix",
-    "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc"
+    "dev": "next dev",
+    "build": "next build",
+    "export": "next export",
+    "start": "next start"
   },
   "dependencies": {
-    "gatsby": "^4.4.0",
-    "gatsby-plugin-catch-links": "^4.4.0",
-    "gatsby-plugin-manifest": "^4.4.0",
-    "gatsby-plugin-nprogress": "^4.4.0",
-    "gatsby-plugin-offline": "^5.4.0",
-    "gatsby-plugin-preload-link-crossorigin": "^1.0.2",
-    "gatsby-plugin-react-helmet": "^5.4.0",
-    "gatsby-plugin-sass": "^5.4.0",
-    "gatsby-plugin-sharp": "^4.4.0",
-    "gatsby-source-filesystem": "^4.4.0",
-    "gatsby-transformer-remark": "^5.4.0",
-    "gatsby-transformer-sharp": "^4.4.0",
-    "howler": "^2.2.3",
-    "react": "^17.0.2",
-    "react-bootstrap": "^2.0.3",
-    "react-dom": "^17.0.2",
-    "react-helmet": "^6.1.0",
-    "react-icons": "^4.3.1",
-    "react-typed": "^1.2.0",
-    "sass": "^1.45.0"
+    "next": "13.4.12",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
   },
   "devDependencies": {
-    "eslint": "^8.4.1",
-    "eslint-config-google": "^0.14.0",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-config-react-app": "^7.0.0",
-    "eslint-plugin-prettier": "^4.0.0",
-    "eslint-plugin-react": "^7.27.1",
-    "eslint-plugin-react-hooks": "^4.3.0",
-    "prettier": "^2.5.1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/teddywilson/teddywilson.me"
-  },
-  "bugs": {
-    "url": "https://github.com/teddywilson/teddywilson.me"
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.24",
+    "tailwindcss": "^3.3.2"
   }
 }

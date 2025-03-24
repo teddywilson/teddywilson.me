@@ -8,3 +8,7 @@ public
 
 .DS_Store
 
+.next/
+
+.env
+
